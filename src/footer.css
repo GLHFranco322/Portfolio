@@ -1,0 +1,22 @@
+footer{
+    width: 100%;
+    justify-items: center;
+    bottom: 0;
+    position: static;
+    bottom: 0;
+    /* background-color: red; */
+
+    .socials{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        padding: 1rem;
+        border-top: 1px solid rgba(0, 0, 0, .6);
+        
+        img{
+            height: 2rem;
+            opacity: .6;
+            filter: drop-shadow(0 0 1px var(--black-color));
+        }
+    }
+}
