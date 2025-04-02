@@ -9,6 +9,7 @@ function App() {
     <div id='app' className='app'>
       <Header />
       <SectionOne />
+      <SectionOne />
       <Footer />
     </div>
   )
