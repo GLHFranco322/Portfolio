@@ -1,11 +1,10 @@
 .off-screen-menu {
+    --right_posittion: 2px;
     /* background-color: var(--green-color); */
     height: 50vh;
-    width: 100%;
-    max-width: 10vw;
+    width: 4rem;
     position: fixed;
-    top: -7%;
-    right: -10vw;
+    top: 0;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
@@ -18,26 +17,26 @@
 }
 
 .off-screen-menu.active {
-    top: -7%;
+    top: -0%;
     /* right: .5rem; */
     animation: toRight 0.5s ease forwards;
 }
 
 @keyframes toRight {
     0% {
-        right: -10vw;
+        right: -4rem;
     }
     100% {
-        right: .5rem;
+        right: var(--right_posittion);
     }
 }
 
 @keyframes toLeft {
     0% {
-        right: .5rem;
+        right: var(--right_posittion);
     }
     100% {
-        right: -10vw;
+        right: -4rem;
     }
 }
 
@@ -68,7 +67,6 @@
     &:hover{
         transform: scale(1.1);
         opacity: 1;
-        box-shadow: 0 0 4px var(--black-color);
     }
 }
 
