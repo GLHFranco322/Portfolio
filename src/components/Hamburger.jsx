@@ -12,9 +12,9 @@ export default function Hamburger() {
         <>
             <nav className={`off-screen-menu ${isActive ? 'active' : ''}`}>
                 <ul className="off-screen-menu__list">
-                    <li><i><img src="/public/icons/user.png" alt="" /></i></li>
-                    <li><i><img src="/public/icons/sketch.png" alt="" /></i></li>
-                    <li><i><img src="/public/icons/whatsapp.png" alt="" /></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
+                    <li><i></i></li>
                 </ul>
             </nav>
 
