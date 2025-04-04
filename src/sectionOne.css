@@ -13,9 +13,12 @@
 
     img{
         width: 100%;
+        max-width: 1440px;
         height: 100%;
         /* object-fit: cover; */
         bottom: -20%;
         position: absolute;
+        z-index: -1;
+        /* box-shadow: 0 0 10px var(--white-color); */
     }
 }
