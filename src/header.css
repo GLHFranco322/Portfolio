@@ -11,5 +11,11 @@
         height: 3rem;
         cursor: pointer;
         margin: 1rem;
+        transition: var(--transitions) ease;
+
+        &:hover{
+            transform: scale(.95);
+            transition: var(--transitions) ease-in-out;
+        }
     }
 }

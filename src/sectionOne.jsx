@@ -10,10 +10,9 @@ export const SectionOne = () => {
                         <h1>Franco</h1>
                         <h2>Spiazzi</h2>
                     </div>
-                    
                     <p>Full-Stack Web Developer</p>
                 </article>
-                <img src="../public/images/backgroundIndivudiales.webp" alt="" />
+                <img src="../public/images/backgrounds.svg" alt="Arboles de fondo" />
             </section>
         </>
     )

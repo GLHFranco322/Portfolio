@@ -5,7 +5,9 @@
     align-items: center;
     color: var(--green-color);
     position: relative;
+    flex-wrap: wrap;
     overflow: hidden;
+    box-shadow: 0 0 100px rgba(255, 255, 255, .3);
 
     .sectionOneArticle {
         cursor: default;
@@ -51,8 +53,5 @@
         bottom: -33%;
         position: absolute;
         z-index: -1;
-        opacity: .9;
-        filter: brightness(.6);
-        /* box-shadow: 0 0 10px var(--white-color); */
     }
 }
