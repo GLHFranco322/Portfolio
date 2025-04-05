@@ -4,11 +4,11 @@
     height: 50vh;
     width: 4rem;
     position: fixed;
-    top: 0;
+    top: 4.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.2rem;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     font-size: 3rem;
     transition: 0.3s ease;
@@ -17,7 +17,7 @@
 }
 
 .off-screen-menu.active {
-    top: -0%;
+    /* top: 0; */
     /* right: .5rem; */
     animation: toRight var(--transitions) ease forwards;
 }
