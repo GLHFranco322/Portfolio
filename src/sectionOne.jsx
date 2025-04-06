@@ -12,7 +12,7 @@ export const SectionOne = () => {
                     </div>
                     <p>Full-Stack Web Developer</p>
                 </article>
-                <img src="../public/images/backgrounds.svg" alt="Arboles de fondo" />
+                <img src="/images/backgrounds.svg" alt="Arboles de fondo" />
             </section>
         </>
     )

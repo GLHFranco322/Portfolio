@@ -1,0 +1,29 @@
+#sliderContainer{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+
+    .sliderWarepper{
+        height: 100%;
+        width: 100%;
+        border-top: 2px solid var(--black-color);
+        border-bottom: 2px solid var(--black-color);
+
+        .sliderList{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            position: relative;
+
+            .sliderItem{
+                position: absolute;
+                height: 100%;
+                right: 0;
+
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@ footer{
         border-top: 1px solid rgba(0, 0, 0, .6);
         
         img{
-            height: 2rem;
+            height: 1.5rem;
             opacity: .6;
             filter: drop-shadow(0 0 1px var(--black-color));
         }

@@ -71,13 +71,13 @@
 }
 
 .off-screen-menu__list li:nth-child(1) {
-    background-image: url(../../public/icons/user.svg);
+    background-image: url(/icons/user.svg);
 }
 .off-screen-menu__list li:nth-child(2) {
-    background-image: url(../../public/icons/sketch.svg);
+    background-image: url(/icons/sketch.svg);
 }
 .off-screen-menu__list li:nth-child(3) {
-    background-image: url(../../public/icons/whatsapp.svg);
+    background-image: url(/icons/whatsapp.svg);
 }
 
 #nav_menu {
