@@ -30,6 +30,8 @@
             flex-direction: column;
             letter-spacing: 1rem;
             grid-row: 2;
+            justify-content: center;
+            align-items: center;
 
             h1 {
                 font-weight: 400;
@@ -48,12 +50,41 @@
                 font-family: Arial, Helvetica, sans-serif;
                 grid-row: 3;
             }
+            button{
+                width: 6rem;
+                height: 2rem;
+                margin: 1rem;
+                border: 1px solid var(--green-color);
+                border-radius: 5px;
+                background-color: transparent;
+                color: var(--white-color);
+                font-size: .7rem;
+                font-weight: bold;
+                transition: var(--transitions) ease;
+
+                h4{
+                    transition: var(--transitions) ease;
+                    color: var(--green-color);
+                    text-shadow: 0 0 3px rgba(0, 0, 0, .4);
+                }
+
+                &:hover{
+                    cursor: pointer;
+                    background-color: var(--greenLight-color);
+                    transition: var(--transitions) ease-in-out;
+
+                    h4{
+                        transition: var(--transitions) ease;
+                        color: var(--white-color);
+                    }
+                }
+            }
         }
     }
 
     img {
         width: 100%;
-        max-width: 1080px;
+        max-width: 1024px;
         /* height: 100%; */
         bottom: -20%;
         position: absolute;
