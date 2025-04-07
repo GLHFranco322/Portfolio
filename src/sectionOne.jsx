@@ -9,8 +9,8 @@ export const SectionOne = () => {
                     <div className='divArticleOne'>
                         <h1>Franco</h1>
                         <h2>Spiazzi</h2>
+                        <p>Full-Stack Web Developer</p>
                     </div>
-                    <p>Full-Stack Web Developer</p>
                 </article>
                 <img src="/images/backgrounds.svg" alt="Arboles de fondo" />
             </section>

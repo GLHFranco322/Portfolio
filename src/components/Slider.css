@@ -1,29 +1,62 @@
-#sliderContainer{
-    height: 50px;
+#sliderContainer {
+    --height: 50px;
+    --width: 100px;
+    --quantity: 11;
+    height: var(--height);
     width: 100%;
-    background-color: rgba(0, 0, 0, .3);
 
-    .sliderWarepper{
-        height: 100%;
+    .slider {
+        height: var(--height);
         width: 100%;
-        border-top: 2px solid var(--black-color);
-        border-bottom: 2px solid var(--black-color);
+        border-top: 2px solid rgba(0, 0, 0, .6);
+        border-bottom: 2px solid rgba(0, 0, 0, .6);
+        overflow: hidden;
+        mask-image: linear-gradient(to right,
+                transparent,
+                #000 10% 90%,
+                transparent);
 
-        .sliderList{
-            height: 100%;
-            width: 100%;
+        .List {
             display: flex;
+            width: 100%;
+            min-width: calc(var(--width) * var(--quantity));
             position: relative;
 
-            .sliderItem{
+            .sliderItem {
+                width: var(--width);
+                height: var(--height);
                 position: absolute;
-                height: 100%;
-                right: 0;
+                left: 100%;
+                opacity: .6;
+                transition: opacity .3s ease-in-out;
+                animation: autoRun 20s linear infinite;
+                animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1));
 
-                img{
-                    height: 100%;
+                img {
+                    width: 100%;
+                    height: var(--height);
+                    padding: .4rem 0;
+                }
+
+                &:hover {
+                    opacity: 1;
+                    filter: drop-shadow(0 0 3px rgba(0, 0, 0, .3));
                 }
             }
         }
+
+        &:hover .sliderItem {
+            animation-play-state: paused !important;
+        }
+    }
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: calc(var(--width) * -1);
     }
 }

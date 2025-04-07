@@ -5,10 +5,8 @@ export const SectionTwo = () => {
   return (
     <>
       <section className='sectionTwo' id='sectionTwo'>
-        <div className='sectionTwoContainer'>
-          <h2>Section Two</h2>
-        </div>
-          <img src="/images/backgroundSectionTwo.svg" alt="" />
+        
+          <img src="/images/backgroundSectionTwo.svg" alt="background mountain" />
       </section>
     </>
   )
