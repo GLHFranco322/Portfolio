@@ -5,8 +5,19 @@ export const SectionOne = () => {
     return (
         <>
             <section id='sectionOne' className='sectionOne'>
-                <h1>Franco Spiazzi</h1>
-                <img src="../public/images/backgroundIndivudiales.webp" alt="" />
+                <article id='sectionOneArticle' className='sectionOneArticle'>
+                    <div className='divArticleOne'>
+                        <h1>Franco</h1>
+                        <h2>Spiazzi</h2>
+                        <p>Full-Stack Web Developer</p>
+                        <button>
+                            <h4>
+                                Sobre mi
+                            </h4>
+                        </button>
+                    </div>
+                </article>
+                <img src="/images/backgrounds.svg" alt="Arboles de fondo" />
             </section>
         </>
     )

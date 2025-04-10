@@ -6,7 +6,9 @@ export const Header = () => {
     return (
         <>
             <header id="headerMain">
-                <img src="/icons/FS.png" alt="logo FS" />
+                <a href="#sectionOne">
+                    <img src="/icons/FS.png" alt="logo FS" />
+                </a>
                 <Hamburger />
             </header>
         </>

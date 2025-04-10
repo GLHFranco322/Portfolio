@@ -12,9 +12,9 @@ export default function Hamburger() {
         <>
             <nav className={`off-screen-menu ${isActive ? 'active' : ''}`}>
                 <ul className="off-screen-menu__list">
-                    <li><i></i></li>
-                    <li><i></i></li>
-                    <li><i></i></li>
+                    <li><a href="#" onClick={toggleMenu}><i></i></a></li>
+                    <li><a href="#sectionTwo" onClick={toggleMenu}><i></i></a></li>
+                    <li><a href="#sectionThree" onClick={toggleMenu}><i></i></a></li>
                 </ul>
             </nav>
 
