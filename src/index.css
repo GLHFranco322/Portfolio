@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -18,6 +20,9 @@ body{
   --greenLight-color: #455b45;
   --white-color: #fefefe;
   --black-color: #0f0f0f;
+  --creme-color: #edece3;
+  --red-color: #b91616;
 
   --transitions: .5s;
+  --text-shadow: 0 0 3px rgba(0, 0, 0, .4);
 }

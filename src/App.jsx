@@ -2,7 +2,8 @@ import './App.css'
 import {Header} from './header'
 import { Footer } from './footer'
 import { SectionOne } from './SectionOne'
-import { SectionTwo } from './SectionTwo'
+import { SectionTwo } from './sectionTwo'
+import { SectionThree } from './sectionThree'
 import { Slider } from './components/slider'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <SectionOne />
       <Slider />
       <SectionTwo />
+      <SectionThree />
       <Footer />
     </div>
   )

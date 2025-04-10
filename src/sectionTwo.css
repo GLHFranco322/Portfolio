@@ -1,23 +1,324 @@
 #sectionTwo {
     width: 100%;
     min-height: 100dvh;
-    display: grid;
-    align-content: center;
-    color: var(--green-color);
-    position: relative;
-    overflow: hidden;
-    justify-items: center;
-    box-sizing: border-box;
+    text-align: center;
 
-
-
-    img {
-        width: 100%;
-        max-width: 1080px;
-        /* height: 100%; */
-        bottom: -20%;
-        position: absolute;
-        z-index: -1;
-        opacity: .9;
+    .TittleSectionTwo {
+        font-size: 2.5rem;
+        font-weight: 400;
+        padding: 1rem 0;
+        color: var(--greenLight-color);
+        text-shadow: var(--text-shadow);
+        cursor: default;
     }
+
+    .divContainerSectionTwo {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid var(--green-color);
+
+        .articleSectionTwo {
+            height: 250px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 250px;
+
+            .divTextArticleSectionTwo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+                grid-column: 1/4;
+                font-family: 'squada one';
+                height: 100%;
+                text-align: start;
+                padding-left: 2rem;
+                text-shadow: 0 0 4px black;
+                background-color: rgba(49, 66, 49, .4);
+                color: var(--white-color);
+                overflow: visible;
+                grid-row: 1;
+                mask-image: linear-gradient(to right,
+                        transparent,
+                        black 1% 99%,
+                        transparent);
+                transition: var(--transitions);
+
+                h3 {
+                    font-size: 4rem;
+                    cursor: default;
+
+                    span {
+                        color: var(--red-color);
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    cursor: default;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--white-color);
+                    width: 2rem;
+                    transition: var(--transitions);
+
+                    .fa-github {
+                        font-size: 2rem;
+                        cursor: pointer;
+                    }
+
+                    &:hover {
+                        scale: 1.1;
+                        transition: var(--transitions);
+                        filter: drop-shadow(0 0 3px var(--white-color));
+                    }
+                }
+
+                &:hover {
+                    background-color: rgba(0, 0, 0, .8);
+                    transition: var(--transitions);
+                }
+            }
+
+            .divImageArticleSectionTwo {
+                height: 100%;
+                width: 100%;
+                grid-column: 1/4;
+                z-index: -1;
+                grid-row: 1;
+                background-color: var(--creme-color);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                mask-image: linear-gradient(to right,
+                        transparent,
+                        black 1% 99%,
+                        transparent);
+
+                img {
+                    height: 100%;
+                    scale: 3;
+                    /* translate: 90% -30%; */
+                    animation: Float 20s infinite linear;
+                    filter: drop-shadow(0 0 3px black);
+                    animation-delay: calc((20s / 3) * (var(--position-image) - 1));
+                }
+            }
+        }
+    }
+}
+
+@keyframes Float {
+
+    0%,
+    100% {
+        transform: translateY(50px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(-50px) translateX(-25px);
+    }
+}
+
+.articleSectionTwo:nth-child(1) {
+    position: relative;
+}
+
+.articleSectionTwo:nth-child(1)::after {
+    content: 'Sitios Web';
+    position: absolute;
+    font-size: .8rem;
+    top: 0;
+    left: 2rem;
+    padding: .3rem;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    color: var(--white-color);
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--green-color);
+}
+
+/* .articleSectionTwo:nth-child(2):hover {}
+
+.articleSectionTwo:nth-child(3):hover {}
+
+.articleSectionTwo:nth-child(4):hover {} */
+
+.articleSectionTwo_2 {
+    height: 250px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    border-top: 2px solid var(--green-color);
+    border-bottom: 2px solid var(--green-color);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 1% 99%,
+            transparent);
+
+    .divTextArticleSectionTwo_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 1rem;
+        grid-column: 1/4;
+        font-family: 'squada one';
+        height: 100%;
+        text-align: end;
+        padding-left: 2rem;
+        text-shadow: 0 0 4px black;
+        text-shadow: 0 0 3px black;
+        background-color: rgba(49, 66, 49, .4);
+        color: var(--white-color);
+        overflow: visible;
+        grid-row: 1;
+        padding-right: 2rem;
+        transition: var(--transitions);
+
+        h3 {
+            font-size: 3rem;
+            cursor: default;
+
+            span {
+                color: var(--red-color);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            cursor: default;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--white-color);
+            width: 4rem;
+            transition: var(--transitions);
+            height: 4rem;
+
+            .cflLogo {
+                width: 100%;
+                cursor: pointer;
+            }
+
+            &:hover {
+                scale: 1.1;
+                transition: var(--transitions);
+                filter: drop-shadow(0 0 3px var(--white-color));
+            }
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .8);
+            transition: var(--transitions);
+        }
+    }
+
+    .divImageArticleSectionTwo_2 {
+        height: 100%;
+        width: 100%;
+        grid-column: 1/4;
+        z-index: -1;
+        grid-row: 1;
+        background-color: var(--creme-color);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        mask-image: linear-gradient(to right,
+                transparent,
+                black 5% 99%,
+                transparent);
+        transition: var(--transitions);
+
+        img {
+            height: 100%;
+            scale: 3;
+            /* translate: 90% -30%; */
+            animation: Float 20s infinite linear;
+            filter: drop-shadow(0 0 3px black);
+            animation-delay: calc((20s / 3) * (var(--position-image) - 1));
+        }
+    }
+}
+
+.divTextArticleSectionTwo_3 {
+    grid-row: 1;
+    grid-column: 1/4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    font-family: 'squada one';
+    color: var(--white-color);
+    text-shadow: 0 0 3px black;
+    padding-left: 2rem;
+    background-color: rgba(49, 66, 49, .4);
+    mask-image: linear-gradient(to right,
+            transparent,
+            black 1% 99%,
+            transparent);
+    transition: var(--transitions);
+
+    .imgContrainerFt {
+        height: 6rem;
+        filter: drop-shadow(0 0 3px black);
+        position: relative;
+
+        img {
+            height: 100%;
+            bottom: -30%;
+            left: -20px;
+            scale: 1.5;
+            position: absolute;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .fa-file-pdf {
+        font-size: 2rem;
+        color: var(--white-color);
+        transition: var(--transitions);
+
+        &:hover {
+            text-shadow: 0 0 3px var(--white-color);
+            transition: var(--transitions);
+        }
+    }
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .8);
+        transition: var(--transitions);
+    }
+}
+
+.art3 {
+    position: relative;
+}
+
+.art3::after {
+    content: 'Presentaciones';
+    /* color: #7fffd4; */
+    position: absolute;
+    font-size: .8rem;
+    top: 0;
+    right: 2rem;
+    padding: .3rem;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    color: var(--white-color);
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--green-color);
 }
