@@ -14,6 +14,7 @@ function App() {
       <SectionOne />
       <Slider />
       <SectionTwo />
+      <Slider />
       <SectionThree />
       <Footer />
     </div>
