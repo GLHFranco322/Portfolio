@@ -4,7 +4,7 @@ import Footer  from './footer.jsx'
 import SectionOne from './sectionOne.jsx'
 import SectionTwo  from './sectionTwo.jsx'
 import SectionThree from './sectionThree.jsx'
-import Slider from './components/slider.jsx'
+import Slider from './components/Slider.jsx'
 
 function App() {
 
