@@ -1,9 +1,9 @@
 import './App.css'
-import Header from './header.jsx'
-import Footer  from './footer.jsx'
-import SectionOne from './sectionOne.jsx'
-import SectionTwo  from './sectionTwo.jsx'
-import SectionThree from './sectionThree.jsx'
+import Header from './Header.jsx'
+import Footer  from './Footer.jsx'
+import SectionOne from './SectionOne.jsx'
+import SectionTwo  from './SectionTwo.jsx'
+import SectionThree from './SectionThree.jsx'
 import Slider from './components/Slider.jsx'
 
 function App() {
