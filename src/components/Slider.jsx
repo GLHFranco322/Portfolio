@@ -1,7 +1,7 @@
 import React from 'react';
 import './Slider.css';
 
-export const Slider = () => {
+const Slider = () => {
     return (
         <>
             <section className="sliderContainer" id="sliderContainer">
@@ -46,3 +46,5 @@ export const Slider = () => {
         </>
     );
 };
+
+export default Slider
