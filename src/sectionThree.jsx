@@ -1,6 +1,6 @@
 import React from 'react'
 import './SectionThree.css'
-import Note from './components/Note'
+import Note from './components/Note.jsx'
 
 const SectionThree = () => {
     return (

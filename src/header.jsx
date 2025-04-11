@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import Hamburger from './components/Hamburger'
+import Hamburger from './components/Hamburger.jsx'
 
 const Header = () => {
     return (

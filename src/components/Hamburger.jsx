@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Hamburger.css';
 
-export default function Hamburger() {
+const Hamburger = () => {
     const [isActive, setIsActive] = useState(false);
 
     const toggleMenu = () => {
@@ -32,3 +32,5 @@ export default function Hamburger() {
         </>
     );
 }
+
+export default Hamburger
