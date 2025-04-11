@@ -134,6 +134,7 @@
 
 .byMeText.visible {
     opacity: 1;
+    transition: opacity 5s ease, max-height 5s ease;
     max-height: 1000px; /* suficiente para mostrar todo el contenido */
 }
 
