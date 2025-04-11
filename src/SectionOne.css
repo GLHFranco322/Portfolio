@@ -33,6 +33,38 @@
             justify-content: center;
             align-items: center;
             
+
+            .byMeText{
+                height: max-content;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: normal;
+                width: 100%;
+                max-width: 400px;
+                background-color: rgba(69, 88, 69, .9);
+                color: var(--white-color);
+                padding: 1rem;
+                border: none;
+                border-radius: 20px;
+                outline: 4px solid rgba(0, 100, 0, .3);
+                text-shadow: 0 0 2px var(--black-color);
+                transition: var(--transitions);
+
+                h5{
+                    font-size: 1.3rem;
+                }
+                a{
+                    color: var(--red-color);
+                    font-weight: bold;
+
+                    &:hover{
+                        text-shadow: 0 0 1px var(--white-color);
+                        transition: var(--transitions);
+                    }
+                }
+                p{
+                    letter-spacing: normal;
+                }
+            }
             h1 {
                 font-weight: 400;
                 font-size: 3rem;
@@ -91,4 +123,21 @@
         position: absolute;
         z-index: -1;
     }
+}
+
+.byMeText {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 5s ease, max-height 5s ease;
+}
+
+.byMeText.visible {
+    opacity: 1;
+    max-height: 1000px; /* suficiente para mostrar todo el contenido */
+}
+
+.byMeText.hidden {
+    opacity: 0;
+    max-height: 0;
 }
