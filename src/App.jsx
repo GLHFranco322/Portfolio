@@ -3,7 +3,7 @@ import Header from './header.jsx'
 import Footer  from './footer.jsx'
 import SectionOne from './sectionOne.jsx'
 import SectionTwo  from './sectionTwo.jsx'
-import SectionThree from './SectionThree.jsx'
+import SectionThree from './sectionThree.jsx'
 import Slider from './components/slider.jsx'
 
 function App() {
