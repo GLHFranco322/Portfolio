@@ -1,7 +1,7 @@
 import React from 'react'
 import './SectionTwo.css'
 
-export const SectionTwo = () => {
+const SectionTwo = () => {
   return (
     <>
       <section className='sectionTwo' id='sectionTwo'>
@@ -79,3 +79,5 @@ export const SectionTwo = () => {
     </>
   )
 }
+
+export default SectionTwo

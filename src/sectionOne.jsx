@@ -1,7 +1,7 @@
 import React from 'react'
 import './sectionOne.css'
 
-export const SectionOne = () => {
+const SectionOne = () => {
     return (
         <>
             <section id='sectionOne' className='sectionOne'>
@@ -22,3 +22,5 @@ export const SectionOne = () => {
         </>
     )
 }
+
+export default SectionOne

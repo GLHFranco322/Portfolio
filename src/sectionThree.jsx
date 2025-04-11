@@ -2,7 +2,7 @@ import React from 'react'
 import './sectionThree.css'
 import Note from './components/Note'
 
-export const SectionThree = () => {
+const SectionThree = () => {
     return (
         <>
             <section className='setionThree' id='sectionThree'>
@@ -37,3 +37,5 @@ export const SectionThree = () => {
         </>
     )
 }
+
+export default SectionThree

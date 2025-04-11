@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 import Hamburger from './components/Hamburger'
 
-export const Header = () => {
+const Header = () => {
     return (
         <>
             <header id="headerMain">
@@ -14,3 +14,5 @@ export const Header = () => {
         </>
     )
 }
+
+export default Header
