@@ -49,7 +49,7 @@ const SectionTwo = () => {
                 <img src="/images/Sketches/FurrorTerrae/FurrorTerraeIcon.png" className='furrorTerraeIcon' id='furrorTerraeIcon' alt="" />
               </div>
               <p>
-                Proyecto integrador final del curso de Full-Stack Web Developer
+                Proyecto anual de la materia Diseño Lúdico 1 en UNPAZ
               </p>
               <a target='blank' href="https://drive.google.com/file/d/12VoimNx_MdS_mhrDFDV_KhJBWTDBYb5z/view?usp=sharing">
                 <i class="fa-solid fa-file-pdf"></i></a>
