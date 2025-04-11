@@ -1,5 +1,5 @@
 import React from 'react'
-import './sectionThree.css'
+import './SectionThree.css'
 import Note from './components/Note'
 
 const SectionThree = () => {

@@ -16,7 +16,7 @@ footer {
             filter: drop-shadow(0 0 1px var(--black-color));
 
             &:hover {
-                animation: rotateIcon 2s ease;
+                animation: rotateIcon 2s ease forwards;
             }
         }
     }
