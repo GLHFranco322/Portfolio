@@ -4,9 +4,9 @@ import './SectionOne.css';
 const SectionOne = () => {
     const [showByMe, setShowByMe] = useState(false);
 
-    const toggleByMe = () => {
-        setShowByMe(prev => !prev);
-    };
+    // const toggleByMe = () => {
+    //     setShowByMe(prev => !prev);
+    // };
 
     return (
         <>
@@ -16,10 +16,20 @@ const SectionOne = () => {
                         <h1>Franco</h1>
                         <h2>Spiazzi</h2>
                         <p>Full-Stack Web Developer</p>
-                        <button id='byMeButton' onClick={toggleByMe}>
-                            <h4>Sobre mi</h4>
+                        <button
+                            id="byMeButton"
+                            onClick={() => {
+                                const link = document.createElement('a');
+                                link.href = '/FrancoSpiazziResume.pdf';
+                                link.download = 'FrancoSpiazziResume.pdf';
+                                document.body.appendChild(link);
+                                link.click();
+                                document.body.removeChild(link);
+                            }}
+                        >
+                            <h4>Descargar CV</h4>
                         </button>
-                        <article className={`byMeText ${showByMe ? 'visible' : 'hidden'}`} id="byMeText">
+                        {/* <article className={`byMeText ${showByMe ? 'visible' : 'hidden'}`} id="byMeText">
                             <h5>Franco Dario Spiazzi</h5>
                             <p>
                                 Soy Web Designer orientado al frontend,
@@ -33,7 +43,7 @@ const SectionOne = () => {
                                 mundo digital.
                                 Pueden encontrarme en <a target='black' href="">GitHub</a>, <a target='black' href="">LinkedIn</a> o escribirme directamente a mi <a target='black' href="">Whatsapp</a> personal.
                             </p>
-                        </article>
+                        </article> */}
                     </div>
                 </article>
                 <img src="/images/backgrounds.svg" alt="Arboles de fondo" />
